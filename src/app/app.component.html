@@ -1,4 +1,8 @@
+<br>
+<br>
+<div class="container cardcontainer">
 <form #flashForm="ngForm">
+  <div class="container">
   <h1 class="is-size-3">{{editing ? 'Update' : 'Add a new'}} Flash Card</h1>
   <div class="field">
     <label class="label" for="">Question</label>
@@ -12,6 +16,9 @@
         [ngClass]="{'is-danger': question.invalid && !question.pristine}"
         #question="ngModel">
     </div>
+
+</div>
+
   </div>
   <div class="field">
     <label class="label" for="">Answer</label>
@@ -60,3 +67,5 @@
     (onRememberedChange)="handleRememberedChange($event)"
     ></app-flash>
 </div>
+</div>
+
