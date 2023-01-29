@@ -10,6 +10,9 @@ import { FlashService } from './services/flash.service';
 })
 
 export class AppComponent implements OnInit, OnDestroy {
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
   @ViewChild('flashForm', { static: true }) flashForm!: NgForm;
 
   flash = {
